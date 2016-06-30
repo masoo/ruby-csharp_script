@@ -7,7 +7,7 @@
     <ProjectGuid>{26EF5196-B3B6-4CD3-BA09-C8D9D4ED4CC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ruby_csharp_script</RootNamespace>
+    <RootNamespace>ruby</RootNamespace>
     <AssemblyName>ruby-csharp_script</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -126,7 +126,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="csharp_script\CsharpScript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

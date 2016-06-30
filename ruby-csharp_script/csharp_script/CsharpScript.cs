@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ruby_csharp_script
+namespace ruby.csharp_script
 {
-    public class Class1
+    class CsharpScript
     {
     }
 }
