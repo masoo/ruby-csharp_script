@@ -129,7 +129,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="csharp_script\CsharpScript.cs" />
+    <Compile Include="csharp_script\CSharpScript.cs" />
+    <Compile Include="csharp_script\CSharpScriptEvents.cs" />
+    <Compile Include="csharp_script\CSharpScriptInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

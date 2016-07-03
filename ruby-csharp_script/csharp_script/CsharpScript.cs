@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using Scripting = Microsoft.CodeAnalysis.CSharp.Scripting;
 
 namespace ruby.csharp_script
@@ -10,14 +7,17 @@ namespace ruby.csharp_script
     /// <summary>
     /// CSharpScript wrapper.
     /// </summary>
-    public static class CSharpScript
+    [Guid("31D3AA19-291D-449C-9B2B-E02B9D6F766C")
+        ClassInterface(ClassInterfaceType.AutoDispatch),
+        ComSourceInterfaces(typeof(CSharpScriptEvents))]
+    public class CSharpScript : CSharpScriptInterface
     {
         /// <summary>
         /// Create a new C# script.
         /// </summary>
         /// <param name="code">The source code of the script.</param>
         /// <returns></returns>
-        public static object Create(string code)
+        public object Create(string code)
         {
             return Scripting.CSharpScript.Create(code);
         }
@@ -27,7 +27,7 @@ namespace ruby.csharp_script
         /// </summary>
         /// <param name="code">The source code of the script.</param>
         /// <returns></returns>
-        public static object RunAsync(string code)
+        public object RunAsync(string code)
         {
             return Scripting.CSharpScript.RunAsync(code);
         }
@@ -37,7 +37,7 @@ namespace ruby.csharp_script
         /// </summary>
         /// <param name="code">The source code of the script.</param>
         /// <returns>Returns the value returned by running the script.</returns>
-        public static object EvaluateAsync(string code)
+        public object EvaluateAsync(string code)
         {
             return Scripting.CSharpScript.EvaluateAsync(code);
         }
