@@ -29,7 +29,7 @@ namespace ruby.csharp_script
         /// <returns></returns>
         public object RunAsync(string code)
         {
-            return Scripting.CSharpScript.RunAsync(code);
+            return Scripting.CSharpScript.RunAsync(code).Result;
         }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace ruby.csharp_script
         /// <returns>Returns the value returned by running the script.</returns>
         public object EvaluateAsync(string code)
         {
-            return Scripting.CSharpScript.EvaluateAsync(code);
+            return Scripting.CSharpScript.EvaluateAsync(code).Result;
         }
     }
 }
