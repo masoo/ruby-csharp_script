@@ -7,20 +7,36 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ruby-csharp_script", "ruby-
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ruby-csharp_script_installer", "ruby-csharp_script_installer\ruby-csharp_script_installer.wixproj", "{E1603D79-2B22-462D-9103-EEC0B97D8BF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleConsoleApp", "SampleConsoleApp\SampleConsoleApp.csproj", "{268DE157-4A87-4A77-B284-B9E4B7B3393E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26EF5196-B3B6-4CD3-BA09-C8D9D4ED4CC0}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{26EF5196-B3B6-4CD3-BA09-C8D9D4ED4CC0}.Debug|x64.ActiveCfg = Debug|x64
 		{26EF5196-B3B6-4CD3-BA09-C8D9D4ED4CC0}.Debug|x64.Build.0 = Debug|x64
+		{26EF5196-B3B6-4CD3-BA09-C8D9D4ED4CC0}.Release|Any CPU.ActiveCfg = Release|x64
 		{26EF5196-B3B6-4CD3-BA09-C8D9D4ED4CC0}.Release|x64.ActiveCfg = Release|x64
 		{26EF5196-B3B6-4CD3-BA09-C8D9D4ED4CC0}.Release|x64.Build.0 = Release|x64
+		{E1603D79-2B22-462D-9103-EEC0B97D8BF7}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{E1603D79-2B22-462D-9103-EEC0B97D8BF7}.Debug|x64.ActiveCfg = Debug|x64
 		{E1603D79-2B22-462D-9103-EEC0B97D8BF7}.Debug|x64.Build.0 = Debug|x64
+		{E1603D79-2B22-462D-9103-EEC0B97D8BF7}.Release|Any CPU.ActiveCfg = Release|x86
 		{E1603D79-2B22-462D-9103-EEC0B97D8BF7}.Release|x64.ActiveCfg = Release|x64
 		{E1603D79-2B22-462D-9103-EEC0B97D8BF7}.Release|x64.Build.0 = Release|x64
+		{268DE157-4A87-4A77-B284-B9E4B7B3393E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268DE157-4A87-4A77-B284-B9E4B7B3393E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268DE157-4A87-4A77-B284-B9E4B7B3393E}.Debug|x64.ActiveCfg = Debug|x64
+		{268DE157-4A87-4A77-B284-B9E4B7B3393E}.Debug|x64.Build.0 = Debug|x64
+		{268DE157-4A87-4A77-B284-B9E4B7B3393E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268DE157-4A87-4A77-B284-B9E4B7B3393E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268DE157-4A87-4A77-B284-B9E4B7B3393E}.Release|x64.ActiveCfg = Release|Any CPU
+		{268DE157-4A87-4A77-B284-B9E4B7B3393E}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
