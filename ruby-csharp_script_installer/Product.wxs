@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?define srcdir = "..\ruby-csharp_script\bin\x64\Release" ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="ruby-csharp_script" Language="1033" Version="0.1.0" Manufacturer="System Ya Masoo" UpgradeCode="577E242B-B50A-4786-BE75-8F2693E06326">
+		<Package Description="ruby-csharp_script" Comments="ruby-csharp_script" InstallerVersion="405" Compressed="yes" InstallScope="perMachine" Platform="x64" />
+
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="ruby_csharp_script_installer" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir" />
+    <WixVariable Id="WixUILicenseRtf" Value=".\LICENSE.rtf" />
+
+    <InstallExecuteSequence>
+      <Custom Action='RegasmRegster' After='InstallFiles'>NOT REMOVE</Custom>
+      <Custom Action='RegasmUnRegster' Before='RemoveFiles'>REMOVE</Custom>
+    </InstallExecuteSequence>
+
+    <CustomAction Id="RegasmRegster" Directory="INSTALLFOLDER" Impersonate="no" Execute="deferred" ExeCommand='"[WindowsFolder]Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe" /tlb /codebase "[INSTALLFOLDER]\ruby-csharp_script.dll"' Return="check" />
+    <CustomAction Id="RegasmUnRegster" Directory="INSTALLFOLDER" Impersonate="no" Execute="deferred" ExeCommand='"[WindowsFolder]Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe" /u /tlb /codebase "[INSTALLFOLDER]\ruby-csharp_script.dll"' Return="check" />
+
+  </Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFiles64Folder">
+				<Directory Id="INSTALLFOLDER" Name="RubyCSharpScript" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="Microsoft.CodeAnalysis.CSharp.dll" Guid="*">
+        <File Id="Microsoft.CodeAnalysis.CSharp.dll" Name="Microsoft.CodeAnalysis.CSharp.dll" Source="$(var.srcdir)\Microsoft.CodeAnalysis.CSharp.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="Microsoft.CodeAnalysis.CSharp.Scripting.dll" Guid="*">
+        <File Id="Microsoft.CodeAnalysis.CSharp.Scripting.dll" Name="Microsoft.CodeAnalysis.CSharp.Scripting.dll" Source="$(var.srcdir)\Microsoft.CodeAnalysis.CSharp.Scripting.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="Microsoft.CodeAnalysis.CSharp.Scripting.xml" Guid="*">
+        <File Id="Microsoft.CodeAnalysis.CSharp.Scripting.xml" Name="Microsoft.CodeAnalysis.CSharp.Scripting.xml" Source="$(var.srcdir)\Microsoft.CodeAnalysis.CSharp.Scripting.xml" KeyPath="yes" />
+      </Component>
+      <Component Id="Microsoft.CodeAnalysis.CSharp.xml" Guid="*">
+        <File Id="Microsoft.CodeAnalysis.CSharp.xml" Name="Microsoft.CodeAnalysis.CSharp.xml" Source="$(var.srcdir)\Microsoft.CodeAnalysis.CSharp.xml" KeyPath="yes" />
+      </Component>
+      <Component Id="Microsoft.CodeAnalysis.dll" Guid="*">
+        <File Id="Microsoft.CodeAnalysis.dll" Name="Microsoft.CodeAnalysis.dll" Source="$(var.srcdir)\Microsoft.CodeAnalysis.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="Microsoft.CodeAnalysis.Scripting.dll" Guid="*">
+        <File Id="Microsoft.CodeAnalysis.Scripting.dll" Name="Microsoft.CodeAnalysis.Scripting.dll" Source="$(var.srcdir)\Microsoft.CodeAnalysis.Scripting.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="Microsoft.CodeAnalysis.Scripting.xml" Guid="*">
+        <File Id="Microsoft.CodeAnalysis.Scripting.xml" Name="Microsoft.CodeAnalysis.Scripting.xml" Source="$(var.srcdir)\Microsoft.CodeAnalysis.Scripting.xml" KeyPath="yes" />
+      </Component>
+      <Component Id="Microsoft.CodeAnalysis.xml" Guid="*">
+        <File Id="Microsoft.CodeAnalysis.xml" Name="Microsoft.CodeAnalysis.xml" Source="$(var.srcdir)\Microsoft.CodeAnalysis.xml" KeyPath="yes" />
+      </Component>
+      <Component Id="ruby_csharp_script.dll" Guid="*">
+        <File Id="ruby_csharp_script.dll" Name="ruby-csharp_script.dll" Source="$(var.srcdir)\ruby-csharp_script.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="ruby_csharp_script.dll.config" Guid="*">
+        <File Id="ruby_csharp_script.dll.config" Name="ruby-csharp_script.dll.config" Source="$(var.srcdir)\ruby-csharp_script.dll.config" KeyPath="yes" />
+      </Component>
+      <Component Id="ruby_csharp_script.tlb" Guid="*">
+        <File Id="ruby_csharp_script.tlb" Name="ruby-csharp_script.tlb" Source="$(var.srcdir)\ruby-csharp_script.tlb" KeyPath="yes" />
+      </Component>
+      <Component Id="System.AppContext.dll" Guid="*">
+        <File Id="System.AppContext.dll" Name="System.AppContext.dll" Source="$(var.srcdir)\System.AppContext.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Collections.Immutable.dll" Guid="*">
+        <File Id="System.Collections.Immutable.dll" Name="System.Collections.Immutable.dll" Source="$(var.srcdir)\System.Collections.Immutable.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Collections.Immutable.xml" Guid="*">
+        <File Id="System.Collections.Immutable.xml" Name="System.Collections.Immutable.xml" Source="$(var.srcdir)\System.Collections.Immutable.xml" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Console.dll" Guid="*">
+        <File Id="System.Console.dll" Name="System.Console.dll" Source="$(var.srcdir)\System.Console.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Diagnostics.FileVersionInfo.dll" Guid="*">
+        <File Id="System.Diagnostics.FileVersionInfo.dll" Name="System.Diagnostics.FileVersionInfo.dll" Source="$(var.srcdir)\System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Diagnostics.StackTrace.dll" Guid="*">
+        <File Id="System.Diagnostics.StackTrace.dll" Name="System.Diagnostics.StackTrace.dll" Source="$(var.srcdir)\System.Diagnostics.StackTrace.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.IO.dll" Guid="*">
+        <File Id="System.IO.dll" Name="System.IO.dll" Source="$(var.srcdir)\System.IO.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.IO.FileSystem.dll" Guid="*">
+        <File Id="System.IO.FileSystem.dll" Name="System.IO.FileSystem.dll" Source="$(var.srcdir)\System.IO.FileSystem.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.IO.FileSystem.Primitives.dll" Guid="*">
+        <File Id="System.IO.FileSystem.Primitives.dll" Name="System.IO.FileSystem.Primitives.dll" Source="$(var.srcdir)\System.IO.FileSystem.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Linq.dll" Guid="*">
+        <File Id="System.Linq.dll" Name="System.Linq.dll" Source="$(var.srcdir)\System.Linq.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Linq.Expressions.dll" Guid="*">
+        <File Id="System.Linq.Expressions.dll" Name="System.Linq.Expressions.dll" Source="$(var.srcdir)\System.Linq.Expressions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Reflection.dll" Guid="*">
+        <File Id="System.Reflection.dll" Name="System.Reflection.dll" Source="$(var.srcdir)\System.Reflection.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Reflection.Metadata.dll" Guid="*">
+        <File Id="System.Reflection.Metadata.dll" Name="System.Reflection.Metadata.dll" Source="$(var.srcdir)\System.Reflection.Metadata.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Reflection.Metadata.xml" Guid="*">
+        <File Id="System.Reflection.Metadata.xml" Name="System.Reflection.Metadata.xml" Source="$(var.srcdir)\System.Reflection.Metadata.xml" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Runtime.dll" Guid="*">
+        <File Id="System.Runtime.dll" Name="System.Runtime.dll" Source="$(var.srcdir)\System.Runtime.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Runtime.Extensions.dll" Guid="*">
+        <File Id="System.Runtime.Extensions.dll" Name="System.Runtime.Extensions.dll" Source="$(var.srcdir)\System.Runtime.Extensions.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Runtime.InteropServices.dll" Guid="*">
+        <File Id="System.Runtime.InteropServices.dll" Name="System.Runtime.InteropServices.dll" Source="$(var.srcdir)\System.Runtime.InteropServices.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Security.Cryptography.Algorithms.dll" Guid="*">
+        <File Id="System.Security.Cryptography.Algorithms.dll" Name="System.Security.Cryptography.Algorithms.dll" Source="$(var.srcdir)\System.Security.Cryptography.Algorithms.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Security.Cryptography.Encoding.dll" Guid="*">
+        <File Id="System.Security.Cryptography.Encoding.dll" Name="System.Security.Cryptography.Encoding.dll" Source="$(var.srcdir)\System.Security.Cryptography.Encoding.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Security.Cryptography.Primitives.dll" Guid="*">
+        <File Id="System.Security.Cryptography.Primitives.dll" Name="System.Security.Cryptography.Primitives.dll" Source="$(var.srcdir)\System.Security.Cryptography.Primitives.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Security.Cryptography.X509Certificates.dll" Guid="*">
+        <File Id="System.Security.Cryptography.X509Certificates.dll" Name="System.Security.Cryptography.X509Certificates.dll" Source="$(var.srcdir)\System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Text.Encoding.CodePages.dll" Guid="*">
+        <File Id="System.Text.Encoding.CodePages.dll" Name="System.Text.Encoding.CodePages.dll" Source="$(var.srcdir)\System.Text.Encoding.CodePages.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Threading.Thread.dll" Guid="*">
+        <File Id="System.Threading.Thread.dll" Name="System.Threading.Thread.dll" Source="$(var.srcdir)\System.Threading.Thread.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Xml.ReaderWriter.dll" Guid="*">
+        <File Id="System.Xml.ReaderWriter.dll" Name="System.Xml.ReaderWriter.dll" Source="$(var.srcdir)\System.Xml.ReaderWriter.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Xml.XmlDocument.dll" Guid="*">
+        <File Id="System.Xml.XmlDocument.dll" Name="System.Xml.XmlDocument.dll" Source="$(var.srcdir)\System.Xml.XmlDocument.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Xml.XPath.dll" Guid="*">
+        <File Id="System.Xml.XPath.dll" Name="System.Xml.XPath.dll" Source="$(var.srcdir)\System.Xml.XPath.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Xml.XPath.XDocument.dll" Guid="*">
+        <File Id="System.Xml.XPath.XDocument.dll" Name="System.Xml.XPath.XDocument.dll" Source="$(var.srcdir)\System.Xml.XPath.XDocument.dll" KeyPath="yes" />
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+
+</Wix>
