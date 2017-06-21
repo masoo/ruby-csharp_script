@@ -35,118 +35,124 @@
 
 	<Fragment>
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-      <Component Id="Microsoft.CodeAnalysis.CSharp.dll" Guid="*">
+      <Component Id="Microsoft.CodeAnalysis.CSharp.dll" Guid="FFB2ADCB-2BBC-4F72-BCD2-87D25F725831">
         <File Id="Microsoft.CodeAnalysis.CSharp.dll" Name="Microsoft.CodeAnalysis.CSharp.dll" Source="$(var.srcdir)\Microsoft.CodeAnalysis.CSharp.dll" KeyPath="yes" />
       </Component>
-      <Component Id="Microsoft.CodeAnalysis.CSharp.Scripting.dll" Guid="*">
+      <Component Id="Microsoft.CodeAnalysis.CSharp.Scripting.dll" Guid="CABBEAA0-C842-4FF5-8939-005E11E05590">
         <File Id="Microsoft.CodeAnalysis.CSharp.Scripting.dll" Name="Microsoft.CodeAnalysis.CSharp.Scripting.dll" Source="$(var.srcdir)\Microsoft.CodeAnalysis.CSharp.Scripting.dll" KeyPath="yes" />
       </Component>
-      <Component Id="Microsoft.CodeAnalysis.CSharp.Scripting.xml" Guid="*">
+      <Component Id="Microsoft.CodeAnalysis.CSharp.Scripting.xml" Guid="AB467755-B8AD-489C-887F-88434670D93A">
         <File Id="Microsoft.CodeAnalysis.CSharp.Scripting.xml" Name="Microsoft.CodeAnalysis.CSharp.Scripting.xml" Source="$(var.srcdir)\Microsoft.CodeAnalysis.CSharp.Scripting.xml" KeyPath="yes" />
       </Component>
-      <Component Id="Microsoft.CodeAnalysis.CSharp.xml" Guid="*">
+      <Component Id="Microsoft.CodeAnalysis.CSharp.xml" Guid="CC44B6B6-6E3F-4CD0-940C-83390D5C36AB">
         <File Id="Microsoft.CodeAnalysis.CSharp.xml" Name="Microsoft.CodeAnalysis.CSharp.xml" Source="$(var.srcdir)\Microsoft.CodeAnalysis.CSharp.xml" KeyPath="yes" />
       </Component>
-      <Component Id="Microsoft.CodeAnalysis.dll" Guid="*">
+      <Component Id="Microsoft.CodeAnalysis.dll" Guid="86A2740A-89B6-408B-BEAE-F5096671DB0C">
         <File Id="Microsoft.CodeAnalysis.dll" Name="Microsoft.CodeAnalysis.dll" Source="$(var.srcdir)\Microsoft.CodeAnalysis.dll" KeyPath="yes" />
       </Component>
-      <Component Id="Microsoft.CodeAnalysis.Scripting.dll" Guid="*">
+      <Component Id="Microsoft.CodeAnalysis.Scripting.dll" Guid="C212763C-72D3-4CA8-AFC5-E47C3BE7A0DE">
         <File Id="Microsoft.CodeAnalysis.Scripting.dll" Name="Microsoft.CodeAnalysis.Scripting.dll" Source="$(var.srcdir)\Microsoft.CodeAnalysis.Scripting.dll" KeyPath="yes" />
       </Component>
-      <Component Id="Microsoft.CodeAnalysis.Scripting.xml" Guid="*">
+      <Component Id="Microsoft.CodeAnalysis.Scripting.xml" Guid="BF41CF61-84BA-4CF9-815F-7A3DCD4C307F">
         <File Id="Microsoft.CodeAnalysis.Scripting.xml" Name="Microsoft.CodeAnalysis.Scripting.xml" Source="$(var.srcdir)\Microsoft.CodeAnalysis.Scripting.xml" KeyPath="yes" />
       </Component>
-      <Component Id="Microsoft.CodeAnalysis.xml" Guid="*">
+      <Component Id="Microsoft.CodeAnalysis.xml" Guid="A16A1CD6-FD4F-43E3-824D-BB760D9F301E">
         <File Id="Microsoft.CodeAnalysis.xml" Name="Microsoft.CodeAnalysis.xml" Source="$(var.srcdir)\Microsoft.CodeAnalysis.xml" KeyPath="yes" />
       </Component>
-      <Component Id="ruby_csharp_script.dll" Guid="*">
+      <Component Id="ruby_csharp_script.dll" Guid="D4B62168-7C9B-49DC-A135-202095F3D615">
         <File Id="ruby_csharp_script.dll" Name="ruby-csharp_script.dll" Source="$(var.srcdir)\ruby-csharp_script.dll" KeyPath="yes" />
       </Component>
-      <Component Id="ruby_csharp_script.dll.config" Guid="*">
+      <Component Id="ruby_csharp_script.dll.config" Guid="4F469EC4-ABBA-4C3A-BBFB-F35218B4F707">
         <File Id="ruby_csharp_script.dll.config" Name="ruby-csharp_script.dll.config" Source="$(var.srcdir)\ruby-csharp_script.dll.config" KeyPath="yes" />
       </Component>
-      <Component Id="ruby_csharp_script.tlb" Guid="*">
+      <Component Id="ruby_csharp_script.tlb" Guid="AF64DB86-9B58-4495-A4D4-1D769AD9B894">
         <File Id="ruby_csharp_script.tlb" Name="ruby-csharp_script.tlb" Source="$(var.srcdir)\ruby-csharp_script.tlb" KeyPath="yes" />
       </Component>
-      <Component Id="System.AppContext.dll" Guid="*">
+      <Component Id="System.AppContext.dll" Guid="0F6B380B-2991-4B63-9B7C-7830A5DB6F8A">
         <File Id="System.AppContext.dll" Name="System.AppContext.dll" Source="$(var.srcdir)\System.AppContext.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Collections.Immutable.dll" Guid="*">
+      <Component Id="System.Collections.Immutable.dll" Guid="099C43E0-1CDE-435B-B656-34F05245123E">
         <File Id="System.Collections.Immutable.dll" Name="System.Collections.Immutable.dll" Source="$(var.srcdir)\System.Collections.Immutable.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Collections.Immutable.xml" Guid="*">
+      <Component Id="System.Collections.Immutable.xml" Guid="2A96AB0A-7078-4441-AAC1-737561841C7B">
         <File Id="System.Collections.Immutable.xml" Name="System.Collections.Immutable.xml" Source="$(var.srcdir)\System.Collections.Immutable.xml" KeyPath="yes" />
       </Component>
-      <Component Id="System.Console.dll" Guid="*">
+      <Component Id="System.Console.dll" Guid="680CD570-683C-4D84-A0D1-C0AD6168D890">
         <File Id="System.Console.dll" Name="System.Console.dll" Source="$(var.srcdir)\System.Console.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Diagnostics.FileVersionInfo.dll" Guid="*">
+      <Component Id="System.Diagnostics.FileVersionInfo.dll" Guid="E4E5EEC3-30DB-4ACB-BF9D-08DDD4BD6086">
         <File Id="System.Diagnostics.FileVersionInfo.dll" Name="System.Diagnostics.FileVersionInfo.dll" Source="$(var.srcdir)\System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Diagnostics.StackTrace.dll" Guid="*">
+      <Component Id="System.Diagnostics.StackTrace.dll" Guid="F8BADEAA-D00F-43C0-A1FC-6542554C9552">
         <File Id="System.Diagnostics.StackTrace.dll" Name="System.Diagnostics.StackTrace.dll" Source="$(var.srcdir)\System.Diagnostics.StackTrace.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.IO.dll" Guid="*">
+      <Component Id="System.IO.Compression.dll" Guid="28B52455-1EDE-4D0E-9C70-6E5C21B4E32A">
+        <File Id="System.IO.Compression.dll" Name="System.IO.Compression.dll" Source="$(var.srcdir)\System.IO.Compression.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.IO.dll" Guid="B36CD577-B032-4204-8BDB-E07460ADBC5A">
         <File Id="System.IO.dll" Name="System.IO.dll" Source="$(var.srcdir)\System.IO.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.IO.FileSystem.dll" Guid="*">
+      <Component Id="System.IO.FileSystem.dll" Guid="2B2C0252-A206-4BE6-B26F-2970F8DFE06C">
         <File Id="System.IO.FileSystem.dll" Name="System.IO.FileSystem.dll" Source="$(var.srcdir)\System.IO.FileSystem.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.IO.FileSystem.Primitives.dll" Guid="*">
+      <Component Id="System.IO.FileSystem.Primitives.dll" Guid="28708BCC-4ABE-4DF2-8CC9-CB2CCDD17527">
         <File Id="System.IO.FileSystem.Primitives.dll" Name="System.IO.FileSystem.Primitives.dll" Source="$(var.srcdir)\System.IO.FileSystem.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Linq.dll" Guid="*">
+      <Component Id="System.Linq.dll" Guid="1BC883FF-2F24-4769-AA29-EBA78BBAE87D">
         <File Id="System.Linq.dll" Name="System.Linq.dll" Source="$(var.srcdir)\System.Linq.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Linq.Expressions.dll" Guid="*">
+      <Component Id="System.Linq.Expressions.dll" Guid="0CCD33B8-58DA-4CDA-A073-8644DDC9601F">
         <File Id="System.Linq.Expressions.dll" Name="System.Linq.Expressions.dll" Source="$(var.srcdir)\System.Linq.Expressions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Reflection.dll" Guid="*">
+      <Component Id="System.Reflection.dll" Guid="F3E9CE18-803E-4065-8A32-F8EC5B5BFA20">
         <File Id="System.Reflection.dll" Name="System.Reflection.dll" Source="$(var.srcdir)\System.Reflection.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Reflection.Metadata.dll" Guid="*">
+      <Component Id="System.Reflection.Metadata.dll" Guid="DA5BB41E-F056-492D-8048-CA5193AD1FB5">
         <File Id="System.Reflection.Metadata.dll" Name="System.Reflection.Metadata.dll" Source="$(var.srcdir)\System.Reflection.Metadata.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Reflection.Metadata.xml" Guid="*">
+      <Component Id="System.Reflection.Metadata.xml" Guid="51AB1DC4-D707-44BA-A750-0403D8410FF9">
         <File Id="System.Reflection.Metadata.xml" Name="System.Reflection.Metadata.xml" Source="$(var.srcdir)\System.Reflection.Metadata.xml" KeyPath="yes" />
       </Component>
-      <Component Id="System.Runtime.dll" Guid="*">
+      <Component Id="System.Runtime.dll" Guid="89187F6A-6BDF-4B81-B6B5-81C4115B3FCA">
         <File Id="System.Runtime.dll" Name="System.Runtime.dll" Source="$(var.srcdir)\System.Runtime.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Runtime.Extensions.dll" Guid="*">
+      <Component Id="System.Runtime.Extensions.dll" Guid="8F8E7119-2021-4371-8187-37BC7C9B7253">
         <File Id="System.Runtime.Extensions.dll" Name="System.Runtime.Extensions.dll" Source="$(var.srcdir)\System.Runtime.Extensions.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Runtime.InteropServices.dll" Guid="*">
+      <Component Id="System.Runtime.InteropServices.dll" Guid="18C93D9A-4A21-43DB-A253-0B31B1A744EC">
         <File Id="System.Runtime.InteropServices.dll" Name="System.Runtime.InteropServices.dll" Source="$(var.srcdir)\System.Runtime.InteropServices.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Security.Cryptography.Algorithms.dll" Guid="*">
+      <Component Id="System.Security.Cryptography.Algorithms.dll" Guid="9EEED9EB-7F0D-4946-B957-A3DFD85A22C3">
         <File Id="System.Security.Cryptography.Algorithms.dll" Name="System.Security.Cryptography.Algorithms.dll" Source="$(var.srcdir)\System.Security.Cryptography.Algorithms.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Security.Cryptography.Encoding.dll" Guid="*">
+      <Component Id="System.Security.Cryptography.Encoding.dll" Guid="F724A068-C26B-4546-B512-0C995D626926">
         <File Id="System.Security.Cryptography.Encoding.dll" Name="System.Security.Cryptography.Encoding.dll" Source="$(var.srcdir)\System.Security.Cryptography.Encoding.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Security.Cryptography.Primitives.dll" Guid="*">
+      <Component Id="System.Security.Cryptography.Primitives.dll" Guid="CEA1EB94-9387-43DD-9F55-B20F6D1BD999">
         <File Id="System.Security.Cryptography.Primitives.dll" Name="System.Security.Cryptography.Primitives.dll" Source="$(var.srcdir)\System.Security.Cryptography.Primitives.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Security.Cryptography.X509Certificates.dll" Guid="*">
+      <Component Id="System.Security.Cryptography.X509Certificates.dll" Guid="15251A6B-8FE6-40BD-8CA5-DC3340E1678E">
         <File Id="System.Security.Cryptography.X509Certificates.dll" Name="System.Security.Cryptography.X509Certificates.dll" Source="$(var.srcdir)\System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Text.Encoding.CodePages.dll" Guid="*">
+      <Component Id="System.Text.Encoding.CodePages.dll" Guid="46347E44-5385-4AC9-A856-E2EE80B221DD">
         <File Id="System.Text.Encoding.CodePages.dll" Name="System.Text.Encoding.CodePages.dll" Source="$(var.srcdir)\System.Text.Encoding.CodePages.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Threading.Thread.dll" Guid="*">
+      <Component Id="System.Threading.Thread.dll" Guid="9A5DC327-0AC9-4AAC-9D86-4F74259DEA1E">
         <File Id="System.Threading.Thread.dll" Name="System.Threading.Thread.dll" Source="$(var.srcdir)\System.Threading.Thread.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Xml.ReaderWriter.dll" Guid="*">
+      <Component Id="System.ValueTuple.dll" Guid="31FDB530-303D-41FB-8DE3-2506F9693F47">
+        <File Id="System.ValueTuple.dll" Name="System.ValueTuple.dll" Source="$(var.srcdir)\System.ValueTuple.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="System.Xml.ReaderWriter.dll" Guid="FEDC0134-644D-4490-B7C0-A4B39DF7F28E">
         <File Id="System.Xml.ReaderWriter.dll" Name="System.Xml.ReaderWriter.dll" Source="$(var.srcdir)\System.Xml.ReaderWriter.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Xml.XmlDocument.dll" Guid="*">
+      <Component Id="System.Xml.XmlDocument.dll" Guid="2E7113E9-0E92-435A-ACF0-7B0479831627">
         <File Id="System.Xml.XmlDocument.dll" Name="System.Xml.XmlDocument.dll" Source="$(var.srcdir)\System.Xml.XmlDocument.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Xml.XPath.dll" Guid="*">
+      <Component Id="System.Xml.XPath.dll" Guid="29146593-25B2-479B-B28E-0202A63288E6">
         <File Id="System.Xml.XPath.dll" Name="System.Xml.XPath.dll" Source="$(var.srcdir)\System.Xml.XPath.dll" KeyPath="yes" />
       </Component>
-      <Component Id="System.Xml.XPath.XDocument.dll" Guid="*">
+      <Component Id="System.Xml.XPath.XDocument.dll" Guid="EB578D22-AC74-4AEE-B139-32C84BCE105E">
         <File Id="System.Xml.XPath.XDocument.dll" Name="System.Xml.XPath.XDocument.dll" Source="$(var.srcdir)\System.Xml.XPath.XDocument.dll" KeyPath="yes" />
       </Component>
 		</ComponentGroup>

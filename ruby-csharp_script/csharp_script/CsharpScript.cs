@@ -7,9 +7,12 @@ namespace ruby.csharp_script
     /// <summary>
     /// CSharpScript wrapper.
     /// </summary>
-    [Guid("31D3AA19-291D-449C-9B2B-E02B9D6F766C"),
-        ClassInterface(ClassInterfaceType.AutoDispatch),
-        ComSourceInterfaces(typeof(CSharpScriptEvents))]
+    [Guid("31D3AA19-291D-449C-9B2B-E02B9D6F766C")]
+    [ComVisible(true)]
+    [ProgId("ruby.csharp_script.CSharpScript")]
+    [ClassInterface(ClassInterfaceType.None)]
+    [ComDefaultInterface(typeof(CSharpScriptInterface))]
+    [ComSourceInterfaces(typeof(CSharpScriptEvents))]
     public class CSharpScript : CSharpScriptInterface
     {
         /// <summary>
